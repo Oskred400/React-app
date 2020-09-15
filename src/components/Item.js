@@ -29,7 +29,7 @@ export default class Item extends Component {
         const { id, title, completed } = this.props.todoitem 
         return (
             <div style = {this.getStatus()}>
-            <p> Hello from Item component.<br></br>
+            <p> <br></br>
             <input type = "checkbox" onClick = {this.props.markasComplete.bind(this, id)} />
              {title}
 
