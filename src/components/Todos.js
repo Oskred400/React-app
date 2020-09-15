@@ -21,7 +21,7 @@ export default class Todos extends Component {
         console.log("hello from props");
         return this.props.todos && this.props.todos.map( todoitem => (
                    <div>
-                   <Item key = {todoitem.id} todoitem = {todoitem} markasComplete = {this.props.markasComplete}/> 
+                   <Item key = {todoitem.id} todoitem = {todoitem} markasComplete = {this.props.markasComplete} deleteTodos = {this.props.deleteTodos}/> 
          
          </div>
          ));

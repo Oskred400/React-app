@@ -33,12 +33,25 @@ export default class Item extends Component {
             <input type = "checkbox" onClick = {this.props.markasComplete.bind(this, id)} />
              {title}
 
+             <button onClick = {this.props.deleteTodos.bind(this, id)} style = {btnStyle}  >x</button>
+
 
             
             </p>
             </div>
         )
     }
+}
+
+const btnStyle = {
+
+    float: 'right',
+    padding: '-17px 5px',
+    backgroundColor: 'magenta',
+    textDecoration: 'black'
+
+
+
 }
 
 const colorStyle = {
